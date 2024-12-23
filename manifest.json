@@ -1,0 +1,37 @@
+{
+	"manifest_version": 3,
+	"name": "Amazon Returns In Nav",
+	"description": "Adds a link to the Amazon Returns page in the navigation bar.",
+	"version": "1.0.0",
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.amazon.ae/*",
+				"*://*.amazon.ca/*",
+				"*://*.amazon.cn/*",
+				"*://*.amazon.co.jp/*",
+				"*://*.amazon.co.uk/*",
+				"*://*.amazon.com/*",
+				"*://*.amazon.com.au/*",
+				"*://*.amazon.com.be/*",
+				"*://*.amazon.com.br/*",
+				"*://*.amazon.com.tr/*",
+				"*://*.amazon.com.mx/*",
+				"*://*.amazon.de/*",
+				"*://*.amazon.es/*",
+				"*://*.amazon.eg/*",
+				"*://*.amazon.fr/*",
+				"*://*.amazon.in/*",
+				"*://*.amazon.it/*",
+				"*://*.amazon.nl/*",
+				"*://*.amazon.pl/*",
+				"*://*.amazon.sa/*",
+				"*://*.amazon.se/*",
+				"*://*.amazon.sg/*"
+			],
+			"js": [
+				"arin.js"
+			]
+		}
+	]
+}
