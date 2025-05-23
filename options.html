@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon Easy Nav Options</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    h1, h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+    .section { margin-bottom: 20px; }
+    .input-group { margin-bottom: 10px; }
+    label { display: inline-block; width: 100px; }
+    input[type="text"] { width: 250px; }
+    button { margin-top: 10px; }
+    #customLinksList li { margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>Amazon Easy Nav Options</h1>
+
+  <div class="section">
+    <h2>Predefined Links</h2>
+    <div class="input-group">
+      <input type="checkbox" id="returns" name="returns" value="/spr/returns/history" checked>
+      <label for="returns">Returns</label>
+    </div>
+    <div class="input-group">
+      <input type="checkbox" id="support" name="support" value="/gp/help/customer/express/c2c/popup.html" checked>
+      <label for="support">Support Call</label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Custom Links</h2>
+    <div class="input-group">
+      <label for="linkName">Link Name:</label>
+      <input type="text" id="linkName" placeholder="My Orders">
+    </div>
+    <div class="input-group">
+      <label for="linkUrl">Link URL:</label>
+      <input type="text" id="linkUrl" placeholder="/gp/css/order-history">
+    </div>
+    <button id="addLink">Add Link</button>
+    <h3>Your Custom Links:</h3>
+    <ul id="customLinksList">
+      <!-- Custom links will be added here by JavaScript -->
+    </ul>
+  </div>
+
+  <button id="saveOptions">Save Options</button>
+
+  <script src="options.js"></script>
+</body>
+</html>

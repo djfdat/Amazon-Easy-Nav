@@ -3,6 +3,11 @@
 	"name": "Amazon Easy Nav",
 	"description": "Adds links to the Amazon Nav Bar to take you to pages that you frequently want but Amazon makes it extremely difficult to find naturally. Specifcally the Returns Page and the Support Call page.",
 	"version": "1.0.0",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "djfdat@gmail.com"
+		}
+	},
 	"content_scripts": [
 		{
 			"matches": [
@@ -33,5 +38,12 @@
 				"arin.js"
 			]
 		}
+	],
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	},
+	"permissions": [
+		"storage"
 	]
 }
