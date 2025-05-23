@@ -30,7 +30,7 @@
 				"*://*.amazon.sg/*"
 			],
 			"js": [
-				"arin.min.js"
+				"arin.js"
 			]
 		}
 	]
